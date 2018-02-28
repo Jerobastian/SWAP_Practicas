@@ -58,7 +58,7 @@ Si hemos hecho todo bien, nos aparecerá lo siguiente:
 
 -----------------
 
-##Segundo punto: Obtención de un fichero HTML mediante cURL
+## Segundo punto: Obtención de un fichero HTML mediante cURL
 
 Primero y antetodo debemos de comprobar si **cURL ya está instalado en nuestra máquina**. En **Ubtunu 16** ya nos deja acceder a su manual sin aún haber usado la orden `apt-get`.
 
