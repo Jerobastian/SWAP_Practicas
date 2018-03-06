@@ -44,6 +44,9 @@ Teniendo todo esto hecho, hacemos `ping` desde una máquina a otra para comproba
 
 Recordemos que esto se ha realizado sobre **Ubuntu Server 16**, por tanto **la delimitación cambia por completo** con sus versiones anteriores. Adáptalo según la versión de tu sistema operativo.
 
+Además, es probable que no tengamos **conexión a internet**. Si es así, debemos de comentar la línea de texto `gateway 192.168.1.1` con una almohadilla para dejarlo así:
+`#gateway 192.168.1.1`
+
 ## Primer punto: Conexión mediante SSH
 
 Teniendo todo lo anterior hecho, este punto es muy simple.
