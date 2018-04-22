@@ -34,13 +34,13 @@ A partir de aquí podemos realizar varios tipos de algoritmos para balancear la 
 
 Para comprobar si nuestro balanceador funciona o no, lo que debemos de hacer es comprobar desde otra máquina (no nos valen los propios servidores) si el balanceador nos redirecciona a alguno de los servidores o no.
 
-En mi caso, yo he utilizado una máquina con Windows 10 instalado, así que lo único que he tenido que hacer es poner la dirección IP de mi balanceador en el navegador web instalado por defecto.
+En mi caso, yo he utilizado una máquina con Ubuntu Server instalado, así que lo único que he tenido que hacer es ejecutar `curl http://<ip del balanceador>` para obtener el html de la máquina.
 
-TODO: Poner imagen de como se carga el archivo html de uno de los servidores
+![img](https://raw.githubusercontent.com/Jerobastian/SWAP_Practicas/master/P3/prueba%20nginx.png)
 
 Para llegar a diferenciar que servidor es al que estamos conectados, es recomendable cambiar los `index.html` que tenemos por defecto y que cada uno muestre por pantalla una cosa diferente.
 
-TODO: Poner como algoritmo un round-robin en el balanceador (en los dos casos)
+Si hemos llegado a tener problemas, debemos de comentar la línea del fichero `/etc/nginx/nginx.conf` donde pone `include /etc/nginx/sites-enabled/`
 
 ### HaProxy
 

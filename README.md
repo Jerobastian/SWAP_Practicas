@@ -6,4 +6,7 @@ Cada práctica estará contenida en un directorio de este repositorio.
 Esta práctica consiste en configurar varias máquinas para que se conecten entre sí.
 
 ## Práctica 2 (Directorio P2)
-Esta práctica consiste en realizar copias entre máquinas, además de poder programar tareas
+Esta práctica consiste en realizar copias entre máquinas, además de poder programar tareas.
+
+## Práctica 3 (Directorio P3)
+Esta práctica consiste en añadir un balanceador de carga, configurarlo con distintos software y realizarle un benchmark a cada uno.
