@@ -26,7 +26,7 @@ Con todo esto ya realizado, nos queda la configuración para que Nginx no sea un
 
 Para ello, modificaremos (o crearemos, si el fichero no existe) el fichero `/etc/nginx/conf.d/default.conf`, eliminando todo lo que contenga y escribiendo lo que aparece más abajo.
 
-![img](https://raw.githubusercontent.com/Jerobastian/SWAP_Practicas/master/P3/configuracion%20nginx.png)
+![img](https://raw.githubusercontent.com/Jerobastian/SWAP_Practicas/master/P3/configuraci%C3%B3n%20nginx.png)
 
 Hay que tener en cuenta que las direcciones IP de nuestros servidores pueden diferenciarse de los vuestros. Por tanto, tomadlo como referencia y no copieis a lo loco.
 
