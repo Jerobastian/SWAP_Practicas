@@ -32,5 +32,28 @@ Hay que tener en cuenta que las direcciones IP de nuestros servidores pueden dif
 
 A partir de aquí podemos realizar varios tipos de algoritmos para balancear la propia carga. Si uno quiere experimentar, aquí hay un enlace para ver las [distintas opciones de configuración de nginx](http://nginx.org/en/docs/http/ngx_http_upstream_module.html).
 
+Para comprobar si nuestro balanceador funciona o no, lo que debemos de hacer es comprobar desde otra máquina (no nos valen los propios servidores) si el balanceador nos redirecciona a alguno de los servidores o no.
+
+En mi caso, yo he utilizado una máquina con Windows 10 instalado, así que lo único que he tenido que hacer es poner la dirección IP de mi balanceador en el navegador web instalado por defecto.
+
+TODO: Poner imagen de como se carga el archivo html de uno de los servidores
+
+Para llegar a diferenciar que servidor es al que estamos conectados, es recomendable cambiar los `index.html` que tenemos por defecto y que cada uno muestre por pantalla una cosa diferente.
+
+TODO: Poner como algoritmo un round-robin en el balanceador (en los dos casos)
+
 ### HaProxy
 
+Después de haber hecho todo esto con Nginx, ahora le toca el turno a HaProxy. Para instalarlo, de nuevo es muy sencillo:
+
+`sudo apt-get install haproxy`
+
+TODO: Insertar imagen de instalación de HaProxy
+
+Ahora que ya tenemos instalado HaProxy, tendremos que activarlo primero. Pero claro, seguramente Nginx estará ocupando el puerto 80 y, por tanto, no podamos activar el servicio. Hay una solución, y no, no es desinstalar Nginx.
+
+Lo que debemos de hacer primero es parar el servicio de Nginx ejecutando `systemctl stop nginx`. Teniendo ya esto hecho, ejecutamos `systemctl start haproxy`. Ahora ya podremos trabajar con HaProxy sin problemas.
+
+TODO: Insertar la imagen con el intento de iniciar haproxy, después parar nginx e intentar de nuevo iniciar haproxy
+
+Con todo esto hecho ahora toca configurar HaProxy. 
