@@ -71,3 +71,33 @@ En este caso nos saltarán algunos warning, pero no es motivo de preocuparse por
 Todavía no hemos terminado, ya que ahora toca comprobar que nuestro balanceador Haproxy funciona perfectamente:
 
 ![img](https://raw.githubusercontent.com/Jerobastian/SWAP_Practicas/master/P3/prueba%20haproxy.png)
+
+## Sobrecargando al balanceador
+
+Teniendo ya configurado el balanceador con distintas opciones software, vamos a sobrecargarlo para ver como responde. Para ello, ejecutaremos un benchmark desde nuestra máquina cliente: Apache Benchmark.
+
+Para ello, debemos de instalar el benchmark en nuestra máquina cliente:
+
+`sudo apt-get install apache2-utils`
+
+![img](https://raw.githubusercontent.com/Jerobastian/SWAP_Practicas/master/P3/instalaci%C3%B3n%20ab.png)
+
+Con Apache Benchmark ya instalado, vamos a lanzarlo directamente a nuestro balanceador. Debemos de tener en cuenta que en los dos casos cuenta con un algoritmo round-robin.
+
+Para lanzarlo desde nuestra máquina cliente al balanceador, ejecutamos la siguiente línea de comando:
+
+`ab -n 10000 -c 20 <ip del balanceador>/index.html` para realizar el benchmark a Nginx.
+
+`ab -n 10000 -c 20 <ip del balanceador>:85/index.html` para realizar el benchmark a HaProxy.
+
+Vamos a ver nuestros resultados:
+
+Nginx
+
+![img](https://raw.githubusercontent.com/Jerobastian/SWAP_Practicas/master/P3/prueba%20ab%20nginx.png)
+
+HaProxy
+
+![img](https://raw.githubusercontent.com/Jerobastian/SWAP_Practicas/master/P3/prueba%20ab%20haproxy.png)
+
+En los dos casos no hemos tenido ningún tipo de pérdida de paquetes. Ahora bien, HaProxy ha tardado menos en completar el benchmark y, por tanto, puede proporcionar más peticiones por segundo que si el balanceador software fuera Nginx. Así que, si tenemos que decidir el instalar un balanceador software u otro según el benchmark, nos decantaríamos por HaProxy.
