@@ -48,12 +48,26 @@ Después de haber hecho todo esto con Nginx, ahora le toca el turno a HaProxy. P
 
 `sudo apt-get install haproxy`
 
-TODO: Insertar imagen de instalación de HaProxy
+![img](https://raw.githubusercontent.com/Jerobastian/SWAP_Practicas/master/P3/instalacion%20haproxy.png)
 
 Ahora que ya tenemos instalado HaProxy, tendremos que activarlo primero. Pero claro, seguramente Nginx estará ocupando el puerto 80 y, por tanto, no podamos activar el servicio. Hay una solución, y no, no es desinstalar Nginx.
 
 Lo que debemos de hacer primero es parar el servicio de Nginx ejecutando `systemctl stop nginx`. Teniendo ya esto hecho, ejecutamos `systemctl start haproxy`. Ahora ya podremos trabajar con HaProxy sin problemas.
 
-TODO: Insertar la imagen con el intento de iniciar haproxy, después parar nginx e intentar de nuevo iniciar haproxy
+![img](https://raw.githubusercontent.com/Jerobastian/SWAP_Practicas/master/P3/activacion%20haproxy.png)
 
-Con todo esto hecho ahora toca configurar HaProxy. 
+Con todo esto hecho ahora toca configurar HaProxy. Para ello, editaremos el archivo de configuración de HaProxy (`/etc/haproxy/haproxy.conf`), borrando todo lo que hay e introduciendo lo que se puede ver en la imagen de abajo.
+
+![img](https://raw.githubusercontent.com/Jerobastian/SWAP_Practicas/master/P3/configuracion%20haproxy.png)
+
+Con la configuración terminada, vamos a iniciar de nuevo el servicio. Para ello, pararemos HaProxy con `systemctl stop haproxy`, pero no lo iniciaremos con la opción `start` de `systemctl` directamente, sino que antes tendremos que ejecutar la siguiente linea de comando:
+
+`sudo /usr/sbin/haproxy -f /etc/haproxy/haproxy.conf`
+
+![img](https://raw.githubusercontent.com/Jerobastian/SWAP_Practicas/master/P3/configuracion%202%20haproxy.png)
+
+En este caso nos saltarán algunos warning, pero no es motivo de preocuparse por ahora, ya que son cosas funcionales que se utilizaran poco en versiones posteriores del software.
+
+Todavía no hemos terminado, ya que ahora toca comprobar que nuestro balanceador Haproxy funciona perfectamente:
+
+![img](https://raw.githubusercontent.com/Jerobastian/SWAP_Practicas/master/P3/prueba%20haproxy.png)
