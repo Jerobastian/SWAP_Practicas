@@ -10,3 +10,6 @@ Esta práctica consiste en realizar copias entre máquinas, además de poder pro
 
 ## Práctica 3 (Directorio P3)
 Esta práctica consiste en añadir un balanceador de carga, configurarlo con distintos software y realizarle un benchmark a cada uno.
+
+## Práctica 4 (Directorio P4)
+Esta práctica consiste en añadir seguridad a la granja web, instalando SSL y configurando el cortafuegos.
