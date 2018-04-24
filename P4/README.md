@@ -21,3 +21,18 @@ Esto nos creara mediante SSL un certificado de seguridad mediante la clave SSL q
 Después de esto, tendremos que realizar unas configuraciones que se nos mostrarán en pantalla, tal y como aparece en la imagen de abajo.
 
 //TODO: Insertar imagen de la pantalla de configuración después de crear nuestro certificado SSL
+
+Aunque hemos hecho todo esto, nos hace falta configurar un par de cosas para que cada vez que accedamos a nuestras páginas web, se pueda acceder a ellas mediante SSL. Para ello, añadiremos en el fichero `nano /etc/apache2/sites-available/default-ssl` las siguientes líneas después del apartado `SSLEngine on`:
+
+`SSLCertificateFile /etc/apache2/ssl/apache.crt`
+`SSLCertificateKeyFile /etc/apache2/ssl/apache.key`
+
+Teniendo todo esto hecho, debemos de activar el sitio por defecto con `a2ensite default-ssl` y después reiniciar el servicio de Apache.
+
+Para probar nuestro acceso por la "zona segura", deberemos de ejecutar `curl –k https://<ip de la máquina>/index.html`. Nos deberá de aparecer lo siguiente:
+
+//TODO: Insertar imagen de la prueba de conexión mediante HTTPS
+
+## Configurando el cortafuegos
+
+//TODO: Hacer la sección de cortafuegos
