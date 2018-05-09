@@ -14,7 +14,7 @@ A partir de aquí, realizamos los cambios que se indican en la imagen de más ab
 
 -----------------
 
-![img](https://raw.githubusercontent.com/Jerobastian/SWAP_Practicas/master/P1/InterNet.png)
+![img](https://raw.githubusercontent.com/Jerobastian/SWAP_Practicas/master/P1/Imagenes/InterNet.png)
 
 -----------------
 
@@ -28,11 +28,11 @@ Esto hace que abramos el archivo de interfaces de red con el editor de texto. Te
 
 -----------------
 
-![img](https://raw.githubusercontent.com/Jerobastian/SWAP_Practicas/master/P1/before.png)
+![img](https://raw.githubusercontent.com/Jerobastian/SWAP_Practicas/master/P1/Imagenes/before.png)
 
 -----------------
 
-![img](https://raw.githubusercontent.com/Jerobastian/SWAP_Practicas/master/P1/after.png)
+![img](https://raw.githubusercontent.com/Jerobastian/SWAP_Practicas/master/P1/Imagenes/after.png)
 
 -----------------
 
@@ -57,7 +57,7 @@ Si hemos hecho todo bien, nos aparecerá lo siguiente:
 
 -----------------
 
-![img](https://raw.githubusercontent.com/Jerobastian/SWAP_Practicas/master/P1/SSH.png)
+![img](https://raw.githubusercontent.com/Jerobastian/SWAP_Practicas/master/P1/Imagenes/SSH.png)
 
 -----------------
 
@@ -75,7 +75,7 @@ Teniendo esto ya hecho, vamos a utilizarlo para comprobar que tenemos conexión 
 
 -----------------
 
-![img](https://raw.githubusercontent.com/Jerobastian/SWAP_Practicas/master/P1/CURL.png)
+![img](https://raw.githubusercontent.com/Jerobastian/SWAP_Practicas/master/P1/Imagenes/CURL.png)
 
 -----------------
 

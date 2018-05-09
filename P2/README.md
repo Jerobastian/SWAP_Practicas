@@ -20,7 +20,7 @@ Con esta orden lo que hemos hecho ha sido crear el archivo y mandarlo mediante s
 
 --------
 
-![img](https://raw.githubusercontent.com/Jerobastian/SWAP_Practicas/master/P2/SSH%20transfer.png)
+![img](https://raw.githubusercontent.com/Jerobastian/SWAP_Practicas/master/P2/Imagenes/SSH%20transfer.png)
 
 --------
 
@@ -42,7 +42,7 @@ Primero creamos nuestra clave pública y privada. Para ellos, ejecutamos la sigu
 
 --------
 
-![img](https://raw.githubusercontent.com/Jerobastian/SWAP_Practicas/master/P2/Generating%20key.png)
+![img](https://raw.githubusercontent.com/Jerobastian/SWAP_Practicas/master/P2/Imagenes/Generating%20key.png)
 
 --------
 
@@ -56,7 +56,7 @@ Deberemos de introducir la contraseña esta vez, pero a partir de aquí no nos l
 
 --------
 
-![img](https://raw.githubusercontent.com/Jerobastian/SWAP_Practicas/master/P2/Adding%20key.png)
+![img](https://raw.githubusercontent.com/Jerobastian/SWAP_Practicas/master/P2/Imagenes/Adding%20key.png)
 
 --------
 
@@ -82,7 +82,7 @@ Como podemos observar en la siguiente imagen, el usuario propietario de la carpe
 
 --------
 
-![img](https://raw.githubusercontent.com/Jerobastian/SWAP_Practicas/master/P2/Changing%20owner.png)
+![img](https://raw.githubusercontent.com/Jerobastian/SWAP_Practicas/master/P2/Imagenes/Changing%20owner.png)
 
 --------
 
@@ -94,7 +94,7 @@ Veamos un ejemplo:
 
 --------
 
-![img](https://raw.githubusercontent.com/Jerobastian/SWAP_Practicas/master/P2/Rsync.png)
+![img](https://raw.githubusercontent.com/Jerobastian/SWAP_Practicas/master/P2/Imagenes/Rsync.png)
 
 --------
 
@@ -120,7 +120,7 @@ Esto hara que a cada hora en punto se realice `rsync`. Para comprobar que se ha 
 
 --------
 
-![img](https://raw.githubusercontent.com/Jerobastian/SWAP_Practicas/master/P2/Cron.png)
+![img](https://raw.githubusercontent.com/Jerobastian/SWAP_Practicas/master/P2/Imagenes/Cron.png)
 
 --------
 
