@@ -13,3 +13,6 @@ Esta práctica consiste en añadir un balanceador de carga, configurarlo con dis
 
 ## Práctica 4 (Directorio P4)
 Esta práctica consiste en añadir seguridad a la granja web, instalando SSL y configurando el cortafuegos.
+
+## Práctica 5 (Directorio P5)
+Esta práctica consiste en trabajar con bases de datos, además de saber como trabajar con ellas de tal manera que no haya falta de información
