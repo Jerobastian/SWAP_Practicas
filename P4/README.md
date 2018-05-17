@@ -25,6 +25,7 @@ Después de esto, tendremos que realizar unas configuraciones que se nos mostrar
 Aunque hemos hecho todo esto, nos hace falta configurar un par de cosas para que cada vez que accedamos a nuestras páginas web, se pueda acceder a ellas mediante SSL. Para ello, añadiremos en el fichero `nano /etc/apache2/sites-available/default-ssl` las siguientes líneas después del apartado `SSLEngine on`:
 
 `SSLCertificateFile /etc/apache2/ssl/apache.crt`
+
 `SSLCertificateKeyFile /etc/apache2/ssl/apache.key`
 
 ![img](https://raw.githubusercontent.com/Jerobastian/SWAP_Practicas/master/P4/Imagenes/Configuraci%C3%B3n%20de%20SSL.PNG)
@@ -42,6 +43,7 @@ Para probar nuestro acceso por la "zona segura", deberemos de ejecutar `curl –
 Con esto ya hecho en una máquina, deberemos de hacer lo mismo con las demás. Para ello copiaremos de manera remota tanto el fichero `.crt` como el fichero `.key` creados. Lo haremos ejecutando la siguiente línea desde la máquina donde tenemos los certificados:
 
 `scp /etc/apache2/ssl/apache.crt <usuario_maquina_destino>@<ip_de_la_maquina_destino>`
+
 `scp /etc/apache2/ssl/apache.key <usuario_maquina_destino>@<ip_de_la_maquina_destino>`
 
 ![img](https://raw.githubusercontent.com/Jerobastian/SWAP_Practicas/master/P4/Imagenes/A%C3%B1adiendo%20el%20certificado%20en%20el%20otro%20servidor.PNG)
